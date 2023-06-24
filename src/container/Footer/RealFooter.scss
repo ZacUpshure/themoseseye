@@ -1,0 +1,236 @@
+
+// .footer-container {
+//     max-width: 117rem;
+//     // background-color: red;
+//     margin: auto;
+// }
+
+// ul {
+//     list-style: none;
+// }
+
+// .footer {
+//     border-top: 1px solid #e0e0e0;
+//     padding: 7rem 7rem;
+
+//     @media screen and (max-width: 767px) {
+//         .footer-col {
+//             width: 50%;
+//             margin-bottom: 30px;
+//         }
+//     }
+
+//     @media screen and (max-width: 574px) {
+//         .footer-col {
+//             width: 50%;
+//             margin-bottom: 30px;
+//         }
+//     }
+// }
+
+// .footer-col {
+//     width: 25%;
+//     padding: 0 1.5rem;
+// }
+
+// .footer-col h4{
+//     font-size: 1.8rem;
+//     // color: #000000;
+//     text-transform: capitalize;
+//     margin-bottom: 3rem;
+//     font-weight: 500;
+//     position: relative;
+// }
+
+// .footer-col h4::before {
+//     content: '';
+//     position: absolute;
+//     left: 0;
+//     bottom: -1rem;
+//     background-color: var(--secondary-color);
+//     height: 0.2rem;
+//     box-sizing: border-box;
+//     width: 5rem;
+// }
+
+// .footer-col ul li:not(:last-child) {
+//     margin-bottom: 1rem;
+// }
+
+// .footer-col ul li a {
+//     font-size: 1.2rem;
+//     text-transform: capitalize;
+//     text-decoration: none;
+//     font-weight: 300;
+//     color: #232323bb;
+//     display: block;
+//     transition: all 0.3s ease;
+// }
+
+// .footer-col ul li a:hover {
+//     color: var(--secondary-color);
+//     padding-left: 1rem;
+// } 
+
+// .footer-col .social-links a {
+//     display: inline-block;
+//     height: 4rem;
+//     width: 4rem;
+//     background-color: rgb(231, 231, 231)
+//     //  rgba(236, 236, 236, 0.2)
+//     ;
+//     margin-right: 1rem;
+//     text-align: center;
+//     line-height: 4rem;
+//     border-radius: 50%;
+//     color: var(--secondary-color);
+//     transition: all 0.5s ease;
+// }
+
+// .footer-col .social-links a:hover {
+//     color: #24262b;
+//     background-color: #ffff;
+// } 
+
+// .footer-col .social-links .icons {
+
+//     min-height: 5.7rem;
+// }
+
+// .row {
+//     display: flex;
+//     flex-wrap: wrap;
+// }
+
+//%%%%%%%%%%%%%%%%%%%%%%%%%
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% FOOTER %%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+.footer {
+    padding: 8.8rem 0;
+    border-top: 1px solid #696969;
+
+    @media screen and (max-width: 75em) {
+        html{
+            font-size: 56.25%;
+        }
+
+        .grid{
+            column-gap: 1.8rem;
+            row-gap:  2.4rem ;
+        }
+    }
+
+    @media screen and (max-width: 59em) {
+        html{
+            font-size: 50%;
+        }   
+        .footer-link:link,
+        .footer-link:visited {
+            font-size: 0.8rem;
+        }
+    }
+
+    @media screen and (max-width: 44em) {
+
+        .heading-secondary{
+            margin-bottom: 4.8rem ;
+        }
+
+        .grid--footer{
+            grid-template-columns: repeat(2, 1fr);
+        } 
+
+    }
+}
+  
+  .grid--footer {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  
+  .logo-col {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-logo {
+    display: block;
+    margin-bottom: 3.2rem;
+  }
+  
+  .social-links {
+    list-style: none;
+    display: flex;
+    gap: 2.4rem;
+  }
+  
+  .social-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+  }
+  
+  .copyright {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #767676;
+    margin-top: 1rem;
+  }
+  
+  .footer-heading {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+  }
+  
+  .contacts {
+    font-style: normal;
+    font-size: 1.6rem;
+  }
+  
+  .address {
+    margin-bottom: 1rem;
+  }
+  
+  .footer-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+  }
+  
+  .footer-link:link,
+  .footer-link:visited {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #767676;
+    transition: all 0.3s;
+  }
+  
+  .footer-link:hover,
+  .footer-link:active {
+    color: #555;
+  }
+
+  //%%%%%%%%%%%%%%%%%%%%%%%%%
+  //%%%%% other css %%%%%%%%
+  //%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  /* Conatainer */
+
+.container-realfooter{
+    max-width: 120rem;
+    padding: 0 3.2rem ;
+    margin: 0 auto ;
+}
+
+/* Reusable Grid */
+
+.grid{
+    display: grid;
+    column-gap: 2.4rem;
+    row-gap: 9.6rem;
+}
+
+/*   */
