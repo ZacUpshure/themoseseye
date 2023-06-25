@@ -1,3 +1,7 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
 body {
   background-color: #fff; /* set default background color */
   padding-top: env(safe-area-inset-top); /* set top padding using env() function */

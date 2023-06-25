@@ -10,6 +10,10 @@ import {
   Header, 
   Skills, 
   Testimonial, 
+  Features,
+  Pricing,
+  PricingPhotography,
+  PricingCommercials,
   Work
 } from './container';
 
@@ -20,11 +24,15 @@ const App = () => {
     <div className='app'>
         <Navbar />
         <Header />
-        <About />
+        <Features />
+        {/* <About /> */}
         <Work />
         {/* <Skills /> */}
         {/* <Testimonial /> */}
         <FooterTwo />
+        <Pricing />
+        <PricingPhotography />
+        <PricingCommercials />
         <RealFooter />
     </div>
   );

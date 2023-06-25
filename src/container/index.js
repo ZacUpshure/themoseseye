@@ -5,3 +5,7 @@ export { default as Header } from './Header/Header';
 export { default as Skills } from './Skills/Skills';
 export { default as Testimonial } from './Testimonial/Testimonial';
 export { default as Work } from './Work/Work';
+export { default as Features } from './Features/Features';
+export { default as Pricing } from './Pricing/Pricing';
+export { default as PricingPhotography } from './Pricing/PricingPhotography';
+export { default as PricingCommercials } from './Pricing/PricingCommercials';
