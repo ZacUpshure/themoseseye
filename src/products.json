@@ -1,0 +1,56 @@
+[
+    {
+        "id": "1",
+        "name": "Website Premium",
+        "price": 5000,
+        "details": "20 pages, contact form, responsive design, 3 revisions, CMS, Technical-SEO, Onpage-SEO, Google Analytics Integration, Off-Page-SEO, A/B-Tests und Conversion-Rate-Optimization, Animations, Authentication and Payment Processing"
+    },
+    {
+        "id": "2",
+        "name": "Website Essentials",
+        "price": 2500,
+        "details": "10 pages, contact form, responsive design, 2 revisions, CMS, Technical-SEO, Onpage-SEO, Google Analytics Integration "
+    },
+    {
+        "id": "3",
+        "name": "Website Basic",
+        "price": 1000,
+        "details": "5 pages, contact form, responsive design, 1 revision, Technical-SEO, Onpage-SEO"
+    },
+    {
+        "id": "4",
+        "name": "Commercial Premium",
+        "price": 2500,
+        "details": "90s playtime, custome & concept development, multiple locations, editing and post-production with advanced effects and motion graphics, Licensed background music, sound effects, and voice-over (provided by the company), three revisions"
+    },
+    {
+        "id": "5",
+        "name": "Commercial Essentials",
+        "price": 1000,
+        "details": "60s playtime, custome scriptwriting, 2 locations, editing and post-production with color grading, Licensed background music and sound effects, two revisions"
+    },
+    {
+        "id": "6",
+        "name": "Commercial Basic",
+        "price": 500,
+        "details": "30s playtime, scriptwriting assistance, 1 location, editing and post-production, Royalty-free background music, one revision"
+    },
+    {
+        "id": "7",
+        "name": "Photo Shooting Premium",
+        "price": 2500,
+        "details": "3 hour session, 5 locations, 50 edited final images."
+    },
+    {
+        "id": "8",
+        "name": "Photo Shooting Essentials",
+        "price": 1000,
+        "details": "2 hour session, 3 locations, 25 edited final images."
+    },
+    {
+        "id": "9",
+        "name": "Photo Shooting Basic",
+        "price": 500,
+        "details": "1 hour session, 2 locations, 10 edited final images."
+    }
+]

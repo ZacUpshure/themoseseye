@@ -5,24 +5,24 @@ const tiers = [
   {
     name: 'Basic',
     id: 'tier-basic',
-    href: '/checkout/9',
-    priceMonthly: '$ 500',
+    href: '#',
+    priceMonthly: '$ 1,000',
     description: 'Quis suspendisse ut fermentum neque vivamus non tellus.',
     mostPopular: false,
   },
   {
     name: 'Essential',
     id: 'tier-essential',
-    href: '/checkout/8',
-    priceMonthly: '$ 1,000',
+    href: '#',
+    priceMonthly: '$ 2,500',
     description: 'Quis eleifend a tincidunt pellentesque. A tempor in sed.',
     mostPopular: true,
   },
   {
     name: 'Premium',
     id: 'tier-premium',
-    href: '/checkout/7',
-    priceMonthly: '$ 2,500',
+    href: '#',
+    priceMonthly: '$ 5,000',
     description: 'Orci volutpat ut sed sed neque, dui eget. Quis tristique non.',
     mostPopular: false,
   },
@@ -31,9 +31,15 @@ const sections = [
   {
     name: 'Features',
     features: [
-      { name: 'Session', tiers: { Basic: '1 hour', Essential: '2 hours', Premium: '4 hours' } },
-      { name: 'Locations', tiers: { Basic: '2 locations', Essential: '3 locations', Premium: '5 locations' } },
-      { name: 'Edited images', tiers: { Basic: '10', Essential: '25', Premium: '50' } },
+      { name: 'Social media management', tiers: { Basic: '2 platforms', Essential: '3 platforms', Premium: '4 platforms' } },
+      { name: 'Content creation and scheduling', tiers: { Basic: '10 posts /month', Essential: '20 posts /month', Premium: '30 posts /month' } },
+      { name: 'Social media advertising campaign setup', tiers: { Basic: 'basic setup', Essential: 'setup & management', Premium: 'setup & management' } },
+      { name: 'Monthly performance analytics report', tiers: { Basic: true, Essential: true, Premium: true } },
+      { name: 'Email marketing', tiers: { Basic: '(1 campaign per month)', Essential: '(2 campaigns per month)', Premium: '(3 campaigns per month)' } },
+      { name: 'SEO', tiers: { Basic: 'basic for website',Essential: 'comprehensive for website', Premium: 'comprehensive for website and ongoing optimizations' } },
+      { name: 'Conversion rate optimization (CRO', tiers: { Essential: true, Premium: true } },
+      { name: 'Monthly website traffic analysis and recommendations', tiers: { Essential: true, Premium: true } },
+      { name: 'Monthly website engagement analysis', tiers: {  Premium: true } },
     ],
   },
 ]
@@ -49,7 +55,7 @@ export default function Example() {
         <div className="mx-auto max-w-4xl text-center">
           {/* <h2 className="text-base font-semibold leading-7 text-indigo-600">Pricing</h2> */}
           <p className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-            &nbsp;Photo&nbsp;shootings
+            Digital&nbsp;Marketing
           </p>
         </div>
         {/* <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600">
@@ -72,7 +78,7 @@ export default function Example() {
               </h3>
               <p className="mt-2 flex items-baseline gap-x-1 text-gray-900">
                 <span className="text-4xl font-bold">{tier.priceMonthly}</span>
-                <span className="text-sm font-semibold"></span>
+                <span className="text-sm font-semibold">/Month</span>
               </p>
               <a
                 href={tier.href}
@@ -152,7 +158,7 @@ export default function Example() {
                     <td key={tier.id} className="px-6 pt-2 xl:px-8">
                       <div className="flex items-baseline gap-x-1 text-gray-900">
                         <span className="text-4xl font-bold">{tier.priceMonthly}</span>
-                        <span className="text-sm font-semibold leading-6"></span>
+                        <span className="text-sm font-semibold leading-6">/Month</span>
                       </div>
                       <a
                         href={tier.href}

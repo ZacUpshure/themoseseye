@@ -5,7 +5,7 @@ const tiers = [
   {
     name: 'Basic',
     id: 'tier-basic',
-    href: '#',
+    href: '/checkout/3',
     priceMonthly: '$ 2.500',
     description: 'Quis suspendisse ut fermentum neque vivamus non tellus.',
     mostPopular: false,
@@ -13,7 +13,7 @@ const tiers = [
   {
     name: 'Essential',
     id: 'tier-essential',
-    href: '#',
+    href: '/checkout/2',
     priceMonthly: '$ 5.000',
     description: 'Quis eleifend a tincidunt pellentesque. A tempor in sed.',
     mostPopular: true,
@@ -21,7 +21,7 @@ const tiers = [
   {
     name: 'Premium',
     id: 'tier-premium',
-    href: '#',
+    href: '/checkout/1',
     priceMonthly: '$ 10.000',
     description: 'Orci volutpat ut sed sed neque, dui eget. Quis tristique non.',
     mostPopular: false,

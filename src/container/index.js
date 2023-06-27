@@ -9,3 +9,7 @@ export { default as Features } from './Features/Features';
 export { default as Pricing } from './Pricing/Pricing';
 export { default as PricingPhotography } from './Pricing/PricingPhotography';
 export { default as PricingCommercials } from './Pricing/PricingCommercials';
+export { default as PricingMarketing } from './Pricing/PricingMarketing';
+export { default as CTA } from './CTA/Cta';
+export { default as Team } from './Team/Team';
+export { default as PaymentForm } from './PaymentForm/PaymentForm.component';
