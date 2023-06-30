@@ -24,7 +24,6 @@ const Home = () => {
     <>
         <html>
             <head>
-                <meta name="google-site-verification" content="xjAU_0743q_CSF_OA36OoSwXVY_8Bs176dJ3K0GCNd8" />
                 <title>Themoseseye - Websites, Photography & Marketing | Digital marketing expert</title>
                 <meta name="description" content="Increase sales and reach to more customers, We offer a broad range of Marketing tools such as Social Media, Email marketing, SEO and much more. Our Photography services create an professional high quality and elegant look for any product or service as well as professional commercials tailored to customer needs! Contact today for a free first consultants!" />
 
