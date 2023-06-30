@@ -16,58 +16,78 @@ const RealFooter = () => {
   
             <ul class="social-links">
               <li>
-                <a class="footer-link" href="#">
+                <a class="footer-link" href="https://www.instagram.com/themoseseye/?hl=de">
                     <AiOutlineInstagram />
                 </a>
               </li>
               <li>
-                <a class="footer-link" href="#">
+                <a class="footer-link" href="https://www.behance.net/Moseseye">
                     <AiFillBehanceCircle />
                 </a>
               </li>
             </ul>
             <p class="copyright">
-              by Engelmann Development. All rights reserved.
+              by themoseseye. All rights reserved.
               <br />
-              Copyright &copy; 2027.
+              Copyright &copy; 2023.
             </p>
           </div>
           <div class="address-col">
             <p class="footer-heading">Contact us</p>
             <address class="contacts">
               <p class="address p-text">
-                623 Harrison St., 2nd Floor, San Francisco, CA 94107
+                Fontanestraße 55, 13158 Berlin DE
               </p>
               <p>
-                <a class="footer-link" href="tel:415-201-6370">415-201-6370</a
+                <a class="footer-link" href="tel:415-201-6370">01725450304</a
                 ><br />
                 <a class="footer-link" href="mailto:engelmann-development@Edev.com"
-                  >engelmann-development@Edev.com</a>
+                  >themoseseye@atengelmann.com</a>
               </p>
             </address>
           </div>
           <nav class="nav-col">
-            <p class="footer-heading">Account</p>
+            <p class="footer-heading">Marketing</p>
             <ul class="footer-nav">
-              <li><a class="footer-link" href="#">Create account</a></li>
-              <li><a class="footer-link" href="#">Sign in</a></li>
-              <li><a class="footer-link" href="#">iOS app</a></li>
-              <li><a class="footer-link" href="#">Android app</a></li>
+              <li><a class="footer-link" href="#">SEO</a></li>
+              <li><a class="footer-link" href="#">Social Media Management</a></li>
+              <li><a class="footer-link" href="#">Google ads</a></li>
+              <li><a class="footer-link" href="#">Facebook Campaigns</a></li>
+              <li><a class="footer-link" href="#">Email marketing</a></li>
+              <li><a class="footer-link" href="#">Marketing Strategy</a></li>
             </ul>
           </nav>
   
           <nav class="nav-col margin-left-helper">
-            <p class="footer-heading">Company</p>
+            <p class="footer-heading">Photography</p>
             <ul class="footer-nav">
-              <li><a class="footer-link" href="#">About Engelmann Development</a></li>
-              <li><a class="footer-link" href="#">For Business</a></li>
-              <li><a class="footer-link" href="#">Partners</a></li>
-              <li><a class="footer-link" href="#">Careers</a></li>
+              <li><a class="footer-link" href="#">Product</a></li>
+              <li><a class="footer-link" href="#">Business</a></li>
+              <li><a class="footer-link" href="#">Art</a></li>
+              <li><a class="footer-link" href="#">Personal</a></li>
             </ul>
           </nav>
   
           <nav class="nav-col">
-            <p class="footer-heading">Resources</p>
+            <p class="footer-heading">Web development</p>
+            <ul class="footer-nav">
+              <li><a class="footer-link" href="#">Landingpage</a></li>
+              <li><a class="footer-link" href="#">E commerce</a></li>
+              <li><a class="footer-link" href="#">Application</a></li>
+            </ul>
+          </nav>
+
+          <nav class="nav-col">
+            <p class="footer-heading">Commercials</p>
+            <ul class="footer-nav">
+              <li><a class="footer-link" href="#">Script writing</a></li>
+              <li><a class="footer-link" href="#">Post production</a></li>
+              <li><a class="footer-link" href="#">Actors</a></li>
+            </ul>
+          </nav>
+
+          <nav class="nav-col">
+            <p class="footer-heading">Company</p>
             <ul class="footer-nav">
               <li><a class="footer-link" href="#">Recipe directory</a></li>
               <li><a class="footer-link" href="#">Help center</a></li>

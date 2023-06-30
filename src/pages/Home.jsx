@@ -1,4 +1,6 @@
 import React from 'react'
+import { Helmet } from 'react-helmet';
+
 
 import {
     About, 
@@ -15,11 +17,12 @@ import {
     CTA
   } from './../container';
 
-  import { Navbar } from './../components';
+  import { Navbar, Head } from './../components';
 
 const Home = () => {
   return (
     <>
+        <Head />
         <Navbar />
         <Header />
         <Features />

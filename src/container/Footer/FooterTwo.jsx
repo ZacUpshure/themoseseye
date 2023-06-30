@@ -56,11 +56,9 @@ const FooterTwo = () => {
         </div>
             </div>
             <div className='right'>
-                <h2 >Take a Coffee and Chat with Us</h2>
+                <h2 >Recieve Discounts with our Newsletter</h2>
                 <input type='text' className='field' placeholder='Your Name' />
                 <input type='Email' className='field' placeholder='Your Email' />
-                <input type='text' className='field' placeholder='Phone Number' />
-                <textarea className='field' placeholder='Message'></textarea>
                 <button className='btn'>Send</button>
             </div>
         </div>
