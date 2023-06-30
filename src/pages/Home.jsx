@@ -17,23 +17,53 @@ import {
     CTA
   } from './../container';
 
-  import { Navbar, Head } from './../components';
+  import { Navbar} from './../components';
 
 const Home = () => {
   return (
     <>
-        <Head />
-        <Navbar />
-        <Header />
-        <Features />
-        {/* <About /> */}
-        <Work />
-        {/* <Skills /> */}
-        {/* <Testimonial /> */}
-        <FooterTwo />
-        <Pricing />
-        <CTA />
-        <RealFooter />
+        <html>
+            <head>
+                <title>Themoseseye - Websites, Photography & Marketing | Digital marketing expert</title>
+                <meta name="description" content="Increase sales and reach to more customers, We offer a broad range of Marketing tools such as Social Media, Email marketing, SEO and much more. Our Photography services create an professional high quality and elegant look for any product or service as well as professional commercials tailored to customer needs! Contact today for a free first consultants!" />
+
+                <meta property="og:title" content="Themoseseye - Websites, Photography & Marketing | Digital marketing expert" />
+                <meta property="og:description" content="Increase sales and reach to more customers, We offer a broad range of Marketing tools such as Social Media, Email marketing, SEO and much more. Our Photography services create an professional high quality and elegant look for any product or service as well as professional commercials tailored to customer needs! Contact today for a free first consultants!" />
+                <meta property="og:image" content="https://oli-baustoffe-images.s3.eu-central-1.amazonaws.com/Olibaustoffe_bilder/DJI_0197.jpeg" />
+                <meta property="og:url" content="https://themoseseye.com/" />
+                <meta property="og:type" content="website" />
+
+                <meta name="twitter:title" content="Themoseseye - Websites, Photography & Marketing | Digital marketing expert" />
+                <meta name="twitter:description" content="Increase sales and reach to more customers, We offer a broad range of Marketing tools such as Social Media, Email marketing, SEO and much more. Our Photography services create an professional high quality and elegant look for any product or service as well as professional commercials tailored to customer needs! Contact today for a free first consultants!" />
+                <meta name="twitter:image" content="https://oli-baustoffe-images.s3.eu-central-1.amazonaws.com/Olibaustoffe_bilder/DJI_0197.jpeg" />
+                <meta name="twitter:card" content="summary_large_image" />
+
+                <meta name="linkedin:title" content="Themoseseye - Websites, Photography & Marketing | Digital marketing expert" /> 
+                <meta name="linkedin:description" content="Increase sales and reach to more customers, We offer a broad range of Marketing tools such as Social Media, Email marketing, SEO and much more. Our Photography services create an professional high quality and elegant look for any product or service as well as professional commercials tailored to customer needs! Contact today for a free first consultants!" />
+                <meta name="linkedin:image" content="https://oli-baustoffe-images.s3.eu-central-1.amazonaws.com/Olibaustoffe_bilder/DJI_0197.jpeg" />
+                <meta name="linkedin:card" content="summary_large_image" />
+
+                <meta name="google-site-verification" content="xjAU_0743q_CSF_OA36OoSwXVY_8Bs176dJ3K0GCNd8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <link rel="icon" href="/favicon.ico" />
+            </head>
+            <body>
+                <header>
+                    <Navbar />
+                </header>
+                <main>
+                    <Header />
+                    <Features />
+                    <Work />
+                    <FooterTwo />
+                    <Pricing />
+                    <CTA />
+                </main>
+                <footer>
+                    <RealFooter />
+                </footer>
+            </body>
+        </html>
     </>
   )
 }
