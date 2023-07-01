@@ -2,6 +2,11 @@ import React, { useEffect } from 'react'
 import { Helmet } from 'react-helmet';
 import ReactGA from 'react-ga';
 
+// mailchimp api key
+// 75a5e2332b0a11b53250a076e3df0a29-us8
+
+// dc
+// us8
 
 import {
     About, 

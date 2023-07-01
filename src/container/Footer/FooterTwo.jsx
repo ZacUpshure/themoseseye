@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react';
+import axios from 'axios';
 import './FooterTwo.scss';
 import { GrMapLocation } from 'react-icons/gr'
 import { BsMailbox } from 'react-icons/bs'
@@ -7,6 +8,38 @@ import { BsBehance } from 'react-icons/bs'
 import { BiPhoneCall } from 'react-icons/bi'
 
 const FooterTwo = () => {
+
+  const [email, setEmail] = useState('');
+
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    // Your Mailchimp API endpoint for adding subscribers
+    const apiUrl = process.env.REACT_APP_MAILCHIMP_API_ENDPOINT;
+
+    // Mailchimp API request payload
+    const data = {
+      email_address: email,
+      status: 'subscribed'
+    };
+
+    // Make a POST request to the Mailchimp API
+    axios.post(apiUrl, data)
+      .then(response => {
+        console.log('Subscriber added:', response.data);
+        // Reset the form or show a success message
+      })
+      .catch(error => {
+        console.error('Error adding subscriber:', error);
+        // Handle the error or show an error message
+      });
+  };
+
+
   return (
        <div className='container'>
         <div className='contact-box'>
@@ -43,12 +76,12 @@ const FooterTwo = () => {
           </ul>
           <ul className='sci'>
             <li>
-              <a>
+              <a href='https://www.instagram.com/themoseseye/?hl=de'>
                 <BsInstagram className='ico' />
               </a>
             </li>
             <li>
-              <a>
+              <a href='https://www.behance.net/Moseseye'>
                 <BsBehance className='ico' />
               </a>
             </li>
@@ -57,9 +90,13 @@ const FooterTwo = () => {
             </div>
             <div className='right'>
                 <h2 >Recieve Discounts with our Newsletter</h2>
-                <input type='text' className='field' placeholder='Your Name' />
-                <input type='Email' className='field' placeholder='Your Email' />
-                <button className='btn'>Send</button>
+
+                <form onSubmit={handleSubmit}>
+                  <input type='Email' className='field' placeholder='Your Email' value={email} onChange={handleEmailChange}/>
+                  <button className='btn' type="submit">Send</button>
+                </form>
+
+                {/* <input type='text' className='field' placeholder='Your Name' /> */}
             </div>
         </div>
     </div>
