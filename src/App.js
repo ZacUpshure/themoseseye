@@ -31,6 +31,8 @@ import Marketing from './pages/Marketing';
 import Contact from './pages/Contact';
 import Checkout from './pages/Checkout';
 
+import { Helmet } from 'react-helmet';
+
 const TRACKING_ID = "AW-11242519332";
 ReactGA.initialize(TRACKING_ID);
 
