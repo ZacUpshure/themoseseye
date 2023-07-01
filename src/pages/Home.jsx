@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Helmet } from 'react-helmet';
+import ReactGA from 'react-ga';
 
 
 import {
@@ -20,6 +21,11 @@ import {
   import { Navbar} from './../components';
 
 const Home = () => {
+
+    useEffect(() => {
+      ReactGA.pageview(window.location.pathname)
+    }, [])
+    
   return (
     <>
         <html>
