@@ -15,28 +15,18 @@ const FooterTwo = () => {
     setEmail(event.target.value);
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
 
-    // Your Mailchimp API endpoint for adding subscribers
-    const apiUrl = process.env.REACT_APP_MAILCHIMP_API_ENDPOINT;
+    try {
+      const response = await axios.post('/api/signupNewsletter', { email });
 
-    // Mailchimp API request payload
-    const data = {
-      email_address: email,
-      status: 'subscribed'
-    };
-
-    // Make a POST request to the Mailchimp API
-    axios.post(apiUrl, data)
-      .then(response => {
-        console.log('Subscriber added:', response.data);
-        // Reset the form or show a success message
-      })
-      .catch(error => {
-        console.error('Error adding subscriber:', error);
-        // Handle the error or show an error message
-      });
+      console.log('Subscriber added:', response.data);
+      // Reset the form or show a success message
+    } catch (error) {
+      console.error('Error adding subscriber:', error);
+      // Handle the error or show an error message
+    }
   };
 
 
@@ -92,7 +82,12 @@ const FooterTwo = () => {
                 <h2 >Recieve Discounts with our Newsletter</h2>
 
                 <form onSubmit={handleSubmit}>
-                  <input type='Email' className='field' placeholder='Your Email' value={email} onChange={handleEmailChange}/>
+                  <input 
+                  type='Email' 
+                  className='field' 
+                  placeholder='Your Email' 
+                  value={email} 
+                  onChange={handleEmailChange}/>
                   <button className='btn' type="submit">Send</button>
                 </form>
 
