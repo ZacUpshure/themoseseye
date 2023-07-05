@@ -14,6 +14,7 @@ exports.handler = async (event) => {
 
     // Your Mailchimp API endpoint for adding subscribers
     const apiUrl = `${process.env.REACT_APP_MAILCHIMP_API_ENDPOINT}/lists/${process.env.REACT_APP_MAILCHIMP_LIST_ID}`;
+    console.log(apiUrl);
 
     // Mailchimp API request payload
     const data = {

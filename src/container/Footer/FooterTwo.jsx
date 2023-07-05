@@ -19,7 +19,12 @@ const FooterTwo = () => {
     event.preventDefault();
 
     try {
-      const response = await axios.post('/api/signupNewsletter', { email });
+      const response = await axios.post('http://localhost:5001/api/newsletter/subscribe',
+       { 
+          email: email,
+          js: true 
+       }
+      );
 
       console.log('Subscriber added:', response.data);
       // Reset the form or show a success message
