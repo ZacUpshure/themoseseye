@@ -23,18 +23,30 @@ import redux from '../assets/redux.png';
 import sass from '../assets/sass.png';
 import typescript from '../assets/typescript.png';
 import vue from '../assets/vue.png';
+import gbt from '../assets/ChatGPT-Logo.png'
+import sol from '../assets/Solidity-Logo.png'
 
 import about01 from '../assets/about01_1.png'
 import about02 from '../assets/about03_3.png'
 import about03 from '../assets/about02_2.png'
 import about04 from '../assets/about04_4.png'
+import about05 from '../assets/about04_5.png'
+import about06 from '../assets/about04_6.png'
+import about07 from '../assets/about04_7.png'
+
 
 export default {
     about01,
     about02,
     about03,
     about04,
+    about05,
+    about06,
+    about07,
 
+
+    gbt,
+    sol,
     email,
     mobile,
     api,

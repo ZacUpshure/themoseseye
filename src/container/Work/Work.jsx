@@ -11,10 +11,13 @@ const Work = () => {
   const [activeFilter, setActiveFilter] = useState('All');
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
   const [works, setWorks] = useState([
-    { name: 'front-end', imgUrl: images.about01, title: 'Website', description: 'lorem ipsum', tag: 'Websites' },
-    { name: 'front-end', imgUrl: images.about02, title: 'Website', description: 'lorem ipsum', tag: 'Websites' },
-    { name: 'Corporate Design', imgUrl: images.about03, title: 'Corporate Design', description: 'lorem ipsum', tag: 'UX/UI' },
-    { name: 'Photography', imgUrl: images.about04, title: 'Photoshoot', description: 'lorem ipsum', tag: 'Photo' }
+    { name: 'photoshooting', projectLink: 'https://www.instagram.com/p/CnmZQk6qJI_/', imgUrl: images.about01, title: 'Photoshooting Cooper', description: 'Commercial shooting', tag: 'Photo' },
+    { name: 'photoshooting', projectLink: 'https://www.instagram.com/p/CCbrirdpaWz/', imgUrl: images.about02, title: 'Photoshooting', description: '', tag: 'Photo' },
+    { name: 'photoshooting', projectLink: 'https://www.instagram.com/p/B21yVwiI2PJ/', imgUrl: images.about07, title: 'photoshooting', description: '', tag: 'Photo' },
+    { name: 'OLI Baustoffe',projectLink: 'https://www.olibaustoffe.de/', imgUrl: images.about03, title: 'OLI Baustoffe', description: 'Dachbaustoffe Lieferant', tag: 'Websites' },
+    { name: 'Design', projectLink: '', imgUrl: images.about04, title: 'Coorporate Design Fix Energie', description: 'Fix Energie', tag: 'UX/UI' },
+    { name: 'Design', projectLink: 'https://www.instagram.com/p/CuSMzj5MFjE/', imgUrl: images.about05, title: 'Coorporate Design Seller', description: 'Seller', tag: 'UX/UI' },
+    { name: 'Design', projectLink: 'https://www.instagram.com/p/CuhFwMLssZP/', imgUrl: images.about06, title: 'UI Design', description: '', tag: 'UX/UI' },
   ]);
 
   // Filter works based on active filter
@@ -70,16 +73,6 @@ const Work = () => {
                     className="app__flex"
                   >
                     <AiFillEye />
-                  </motion.div>
-                </a>
-                <a href={work.codeLink} target="_blank" rel="noreferrer">
-                  <motion.div
-                    whileInView={{ scale: [0, 1] }}
-                    whileHover={{ scale: [1, 0.90] }}
-                    transition={{ duration: 0.25 }}
-                    className="app__flex"
-                  >
-                    <AiFillGithub />
                   </motion.div>
                 </a>
               </motion.div>

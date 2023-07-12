@@ -5,6 +5,42 @@ import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
+import { Fragment } from 'react'
+import { Popover, Transition } from '@headlessui/react'
+import { ChevronDownIcon } from '@heroicons/react/20/solid'
+import {
+  ArrowPathIcon,
+  ChartPieIcon,
+  CursorArrowRaysIcon,
+  DocumentChartBarIcon,
+  FingerPrintIcon,
+  SquaresPlusIcon,
+} from '@heroicons/react/24/outline'
+
+const solutions = [
+  { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
+  {
+    name: 'Integrations',
+    description: 'Connect with third-party tools and find out expectations',
+    href: '#',
+    icon: SquaresPlusIcon,
+  },
+  {
+    name: 'Engagement',
+    description: 'Speak directly to your customers with our engagement tool',
+    href: '#',
+    icon: CursorArrowRaysIcon,
+  },
+  { name: 'Automations', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
+  { name: 'Security', description: "Your customers' data will be safe and secure", href: '#', icon: FingerPrintIcon },
+  {
+    name: 'Reports',
+    description: 'Edit, manage and create newly informed decisions',
+    href: '#',
+    icon: DocumentChartBarIcon,
+  },
+]
+
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
@@ -21,7 +57,7 @@ const Navbar = () => {
             ) : (
               <Link to={`/${item}`} >{item}</Link>
             )}
-          </li>
+          </li>  
         ))}
       </ul>
 
