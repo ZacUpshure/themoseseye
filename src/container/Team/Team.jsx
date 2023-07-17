@@ -30,9 +30,15 @@ const people = [
               We’re a dynamic group of individuals who are passionate about what we do and dedicated to delivering the
               best results for our clients.
             </p>
+            <p className="mt-6 text-lg leading-8 text-gray-600">
+              Email: info@themoseseye.com
+            </p>
+            <p className="mt-6 text-lg leading-8 text-gray-600">
+              Tel: 01725450304
+            </p>
           </div>
           <ul role="list" className="-mt-12 space-y-12 divide-y divide-gray-200 xl:col-span-3">
-            {people.map((person) => (
+            {/* {people.map((person) => (
               <li key={person.name} className="flex flex-col gap-10 pt-12 sm:flex-row">
                 <img className="aspect-[4/5] w-52 flex-none rounded-2xl object-cover" src={person.imageUrl} alt="" />
                 <div className="max-w-xl flex-auto">
@@ -63,7 +69,7 @@ const people = [
                   </ul>
                 </div>
               </li>
-            ))}
+            ))} */}
           </ul>
         </div>
       </div>

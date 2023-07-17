@@ -19,11 +19,17 @@ const FooterTwo = () => {
     event.preventDefault();
 
     try {
+      var _headers = {
+        headers: {
+            "Content-Type": "application/json",
+        },
+      };
       const response = await axios.post('http://localhost:5001/api/newsletter/subscribe',
        { 
           email: email,
           js: true 
-       }
+       },
+       _headers
       );
 
       console.log('Subscriber added:', response.data);
