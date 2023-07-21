@@ -37,9 +37,11 @@ const CartMenu = () => {
         body: JSON.stringify(cartItems),
       });
 
-      if(response.statusCode === 500) return;
+      if(response.status === 500) return;
 
       const data = await response.json();
+      console.log(data);
+      console.log(data.id);
 
       toast.loading('Redirecting...');
 
