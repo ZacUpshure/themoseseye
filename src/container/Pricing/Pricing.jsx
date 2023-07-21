@@ -5,7 +5,7 @@ const tiers = [
   {
     name: 'Basic',
     id: 'tier-basic',
-    href: '/checkout/3',
+    href: '/products/item/wordpress-website',
     priceMonthly: '$ 500',
     description: 'Quis suspendisse ut fermentum neque vivamus non tellus.',
     mostPopular: false,

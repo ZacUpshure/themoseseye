@@ -45,7 +45,9 @@ const Market = () => {
           </div>
 
           <div className='container mx-auto pt-7 pb-7'>
+            <div className='grid grid-cols-3 gap-3'>
               {products?.map((product) => <Product key={product._id} product={product} />)}
+            </div>
           </div>
 
           {/* <FooterBanner /> */}

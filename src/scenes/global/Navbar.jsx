@@ -17,13 +17,13 @@ const navigation = {
       {
         name: 'Services',
         featured: [
-          { name: 'Product Photography', href: '#' },
-          { name: 'Business', href: '#' },
-          { name: 'Marriages', href: '#' },
-          { name: 'Family', href: '#' },
+          { name: 'Product Photography', href: '/photography' },
+          { name: 'Business', href: '/products/item/photo-shooting-essential' },
+          { name: 'Marriages', href: '/products/item/photo-shooting-basic' },
+          { name: 'Family', href: '/products/item/photo-shooting-basic' },
         ],
         collection: [
-          { name: 'Landing Page Wordpress', href: '#' },
+          { name: 'Landing Page Wordpress', href: '/products/item/wordpress-website' },
           { name: 'Landing Page React', href: '#' },
           { name: 'Ecommerce', href: '#' },
           { name: 'Web Application', href: '#' },
@@ -31,8 +31,8 @@ const navigation = {
           { name: 'Smart Contracts', href: '#' },
         ],
         categories: [
-          { name: 'Commercials', href: '#' },
-          { name: 'Social Media Content', href: '#' },
+          { name: 'Commercials', href: '/videography' },
+          { name: 'Social Media Content', href: '/products/item/commercial-basic' },
           { name: '', href: '#' },
         ],
         brands: [
@@ -57,13 +57,6 @@ function classNames(...classes) {
 const Navbar = () => {
     const {showCart, setShowCart} = useStateContext();
     const [open, setOpen] = useState(false);
-    const navigate = useNavigate();
-    const dispatch = useDispatch();
-    // const cart = useSelector((state) => state.cart.cart)
-
-    // State variable to manage the visibility of the CartMenu
-    // const [isCartMenuOpen, setIsCartMenuOpen] = useState(false);
-
 
     return (
         <div className="bg-white">
@@ -230,7 +223,7 @@ const Navbar = () => {
           </Dialog>
         </Transition.Root>
   
-        <header className="relative">
+        <header className="relative fixed top-0 w-full">
           <nav aria-label="Top">
             {/* Top navigation */}
             {/* <div className="bg-gray-900">
