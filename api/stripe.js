@@ -12,7 +12,7 @@ export default async function handler(req, res) {
             payment_method_types: ['card'],
             billing_address_collection: 'auto',
             line_items: req.body.map((item) => {
-              const img = item.image[0].asset._ref; // Corrected access to 'asset' instead of 'assets'
+              const img = item.image[0].asset._ref;
               const newImage = img.replace('image-', `https://cdn.sanity.io/images/${process.env.REACT_APP_SANITY_PROJECT_ID}/production/`).replace('-webp', 'webp');
           
               return {
@@ -24,17 +24,13 @@ export default async function handler(req, res) {
                   },
                   unit_amount: item.price * 100,
                 },
-                // adjustable_quantity: {
-                //     enabled: true,
-                //     minimum: 1,
-                // },
-                // quantity: item.quantity,
-              }
+                quantity: item.quantity, // Include the quantity for each product
+              };
             }),
-            // mode: 'payment',
             success_url: `${req.headers.origin}/?success=true`,
             cancel_url: `${req.headers.origin}/?canceled=true`,
           };
+          
           
         // const params = {
         //     submit_types: 'pay',

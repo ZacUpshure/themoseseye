@@ -35,7 +35,7 @@ export const StateContext = ({children}) => {
         if (checkProductInCart) {
           toast.success(`${product.name} already in cart!`);
         } else {
-          setCartItems((prevCartItems) => [...prevCartItems, {...product}]);
+          setCartItems((prevCartItems) => [...prevCartItems, {...product, quantity: 1}]);
           toast.success(`${product.name} added to the cart!`);
         }
     };
