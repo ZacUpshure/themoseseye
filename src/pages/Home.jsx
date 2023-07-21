@@ -17,7 +17,8 @@ import {
     CTA
   } from './../container';
 
-  import { Navbar, Head} from './../components';
+  import {Head} from './../components';
+  import Navbar from './../scenes/global/Navbar';
 
 const Home = () => {
 
@@ -30,9 +31,6 @@ const Home = () => {
         <Head />
         <html>
             <body>
-                <header>
-                    <Navbar />
-                </header>
                 <main>
                     <Header />
                     <Features />
@@ -41,9 +39,6 @@ const Home = () => {
                     <Pricing />
                     <CTA />
                 </main>
-                <footer>
-                    <RealFooter />
-                </footer>
             </body>
         </html>
     </>

@@ -13,12 +13,10 @@ const Photography = () => {
   return (
 
     <article>
-        <Navbar />
         <div className='pt-20'>
             <Banner img={profile.photography} />
         </div>
         <PricingPhotography />
-        <RealFooter />
     </article>
   )
 }

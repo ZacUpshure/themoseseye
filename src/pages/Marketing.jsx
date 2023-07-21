@@ -12,12 +12,10 @@ const profile = {
 const Marketing = () => {
   return (
     <article>
-        <Navbar />
         <div className='pt-20'>
             <Banner img={profile.marketing} />
         </div>
         <PricingMarketing />
-        <RealFooter />
     </article>
   )
 }

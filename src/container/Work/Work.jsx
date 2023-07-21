@@ -11,12 +11,12 @@ const Work = () => {
   const [activeFilter, setActiveFilter] = useState('All');
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
   const [works, setWorks] = useState([
-    { name: 'photoshooting', projectLink: 'https://www.instagram.com/p/CnmZQk6qJI_/', imgUrl: images.about01, title: 'Photoshooting Cooper', description: 'Commercial shooting', tag: 'Photo' },
-    { name: 'photoshooting', projectLink: 'https://www.instagram.com/p/CCbrirdpaWz/', imgUrl: images.about02, title: 'Photoshooting', description: '', tag: 'Photo' },
+    // { name: 'photoshooting', projectLink: 'https://www.instagram.com/p/CnmZQk6qJI_/', imgUrl: images.about01, title: 'Photoshooting Cooper', description: 'Commercial shooting', tag: 'Photo' },
+    // { name: 'photoshooting', projectLink: 'https://www.instagram.com/p/CCbrirdpaWz/', imgUrl: images.about02, title: 'Photoshooting', description: '', tag: 'Photo' },
     { name: 'photoshooting', projectLink: 'https://www.instagram.com/p/B21yVwiI2PJ/', imgUrl: images.about07, title: 'photoshooting', description: '', tag: 'Photo' },
     { name: 'OLI Baustoffe',projectLink: 'https://www.olibaustoffe.de/', imgUrl: images.about03, title: 'OLI Baustoffe', description: 'Dachbaustoffe Lieferant', tag: 'Websites' },
-    { name: 'Design', projectLink: '', imgUrl: images.about04, title: 'Coorporate Design Fix Energie', description: 'Fix Energie', tag: 'UX/UI' },
-    { name: 'Design', projectLink: 'https://www.instagram.com/p/CuSMzj5MFjE/', imgUrl: images.about05, title: 'Coorporate Design Seller', description: 'Seller', tag: 'UX/UI' },
+    // { name: 'Design', projectLink: '', imgUrl: images.about04, title: 'Coorporate Design Fix Energie', description: 'Fix Energie', tag: 'UX/UI' },
+    // { name: 'Design', projectLink: 'https://www.instagram.com/p/CuSMzj5MFjE/', imgUrl: images.about05, title: 'Coorporate Design Seller', description: 'Seller', tag: 'UX/UI' },
     { name: 'Design', projectLink: 'https://www.instagram.com/p/CuhFwMLssZP/', imgUrl: images.about06, title: 'UI Design', description: '', tag: 'UX/UI' },
   ]);
 
