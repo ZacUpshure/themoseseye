@@ -6,7 +6,7 @@ import { Helmet } from 'react-helmet-async';
 const Layout = ({children}) => {
   return (
     <>
-        <header>
+        <header className='sticky top-0 bg-white z-10'>
             <Navbar />
         </header>
         <main>

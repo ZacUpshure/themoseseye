@@ -46,6 +46,7 @@ const navigation = {
     pages: [
         { name: 'Market', href: '/products' },
         { name: 'Contact', href: '/contact' },
+        { name: 'Galery', href: 'https://themoseseye-galery-react-tailwind.vercel.app/' },
         { name: 'Home', href: '/' },
     ],
 }
@@ -199,19 +200,6 @@ const Navbar = () => {
                         </a>
                       </div>
                     ))}
-                  </div>
-  
-                  <div className="space-y-6 border-t border-gray-200 px-4 py-6">
-                    <div className="flow-root">
-                      <a href="#" className="-m-2 block p-2 font-medium text-gray-900">
-                        Create an account
-                      </a>
-                    </div>
-                    <div className="flow-root">
-                      <a href="#" className="-m-2 block p-2 font-medium text-gray-900">
-                        Sign in
-                      </a>
-                    </div>
                   </div>
   
                   <div className="space-y-6 border-t border-gray-200 px-4 py-6">
@@ -438,12 +426,12 @@ const Navbar = () => {
                             </a> */}
                           </div>
   
-                          <div className="flex">
+                          {/* <div className="flex">
                             <a href="#" className="-m-2 p-2 text-gray-400 hover:text-gray-500">
                               <span className="sr-only">Account</span>
                               <UserIcon className="h-6 w-6" aria-hidden="true" />
                             </a>
-                          </div>
+                          </div> */}
                         </div>
   
                         <span className="mx-4 h-6 w-px bg-gray-200 lg:mx-6" aria-hidden="true" />
