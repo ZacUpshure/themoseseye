@@ -24,9 +24,8 @@ const navigation = {
         ],
         collection: [
           { name: 'Landing Page Wordpress', href: '/products/item/wordpress-website' },
-          { name: 'Landing Page React', href: '#' },
-          { name: 'Ecommerce', href: '#' },
-          { name: 'Web Application', href: '#' },
+          { name: 'Landing Page React', href: 'https://themoseseye-galery-react-tailwind.vercel.app/image/1' },
+          { name: 'Ecommerce / Web Application', href: '' },
           { name: 'REST Api', href: '#' },
           { name: 'Smart Contracts', href: '#' },
         ],

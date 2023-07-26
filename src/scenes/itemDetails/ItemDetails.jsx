@@ -119,7 +119,7 @@ const ItemDetails = () => {
         return <p>Loading...</p>;  
     }
     
-    const { image, name, details, price } = productData;
+    const { image, name, details, price, preview } = productData;
     console.log(image)
 
   return (
@@ -182,12 +182,12 @@ const ItemDetails = () => {
               >
                 Pay {price} €
               </button>
-              <button
-                type="button"
+              <a
+              href={preview}
                 className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-50 px-8 py-3 text-base font-medium text-indigo-700 hover:bg-indigo-100 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-50"
               >
                 Preview
-              </button>
+              </a>
             </div>
 
             {/* <div className="mt-10 border-t border-gray-200 pt-10">
