@@ -1,5 +1,5 @@
 import React from 'react'
-import './RealFooter.scss';
+
 import images from '../../constants/images';
 
 import { AiOutlineInstagram } from 'react-icons/ai';
