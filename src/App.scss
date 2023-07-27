@@ -2,14 +2,14 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-body {
-  background-color: #fff; /* set default background color */
-  padding-top: env(safe-area-inset-top); /* set top padding using env() function */
-  background-color: #f1f1f1; /* set background color for the area next to the notch */
-  overflow-x: hidden;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  width: 100%;
-  height: 100vh;
+body {
+  font-family: Inter;
 }
 
 html {

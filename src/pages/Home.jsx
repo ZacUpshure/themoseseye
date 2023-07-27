@@ -34,9 +34,6 @@ const Home = () => {
                 <main>
                     <Header />
                     <Features />
-                    <Work />
-                    <FooterTwo />
-                    <Pricing />
                     <CTA />
                 </main>
             </body>
