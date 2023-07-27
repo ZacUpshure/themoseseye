@@ -3,17 +3,9 @@ import { Helmet } from 'react-helmet';
 import ReactGA from 'react-ga';
 
 import {
-    About, 
-    FooterTwo,
-    RealFooter, 
     Header, 
-    Skills, 
-    Testimonial, 
+    About,
     Features,
-    Pricing,
-    PricingPhotography,
-    PricingCommercials,
-    Work,
     CTA
   } from './../container';
 
@@ -34,6 +26,7 @@ const Home = () => {
                 <main>
                     <Header />
                     <Features />
+                    <About />
                     <CTA />
                 </main>
             </body>
