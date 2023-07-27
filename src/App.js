@@ -4,7 +4,7 @@ import ReactGA from 'react-ga';
 
 // import Layout from "./components/Layout/Layout";
 
-import './App.scss';
+import './App.css';
 
 import { Layout, Navbar } from './components';
 import { StateContext } from './context/StateContext';

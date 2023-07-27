@@ -251,9 +251,6 @@ const ItemDetails = () => {
                 </li>
               </ul>
             </div> */}
-            <div>
-                <h2>You may also like</h2>
-            </div>
           </div>
 
           {/* <div className="mx-auto mt-16 w-full max-w-2xl lg:col-span-4 lg:mt-0 lg:max-w-none">
@@ -364,10 +361,10 @@ const ItemDetails = () => {
           </div> */}
         </div>
             <div className='mx-auto pt-7'>
-                <div className='container'>
-                    <h2 className='text-black text-4xl font-bold'> You may also like</h2>
+                <div className='container '>
+                    <h2 className='text-black text-4xl font-bold pb-4'> You may also like</h2>
                 </div>
-                <div className='container'>
+                <div className='container grid grid-cols-4 gap-4 '>
                     {productsData?.slice(0, 3).map((item) => <Product key={item._id} product={item} />)}
                 </div>
 

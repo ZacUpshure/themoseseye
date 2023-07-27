@@ -35,6 +35,10 @@ import about05 from '../assets/about04_5.png'
 import about06 from '../assets/about04_6.png'
 import about07 from '../assets/about04_7.png'
 
+import lottie_1 from '../assets/lottie_1.json'
+import coin from '../assets/coin.json'
+import megaphone from '../assets/megaphone.json'
+
 
 export default {
     about01,
@@ -44,6 +48,9 @@ export default {
     about05,
     about06,
     about07,
+    lottie_1,
+    coin,
+    megaphone,
 
     photography_img,
 

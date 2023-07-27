@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import './FooterTwo.scss';
 import { GrMapLocation } from 'react-icons/gr'
 import { BsMailbox } from 'react-icons/bs'
 import { BsInstagram } from 'react-icons/bs'
