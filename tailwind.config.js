@@ -4,7 +4,11 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'hero-pattern': "url('https://themoseseye-galery-images.s3.eu-central-1.amazonaws.com/Galery-images/background1.png')",
+      }
+    },
     fontFamily: {
       sans: [
         "Inter var, sans-serif",

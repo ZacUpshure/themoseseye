@@ -26,6 +26,7 @@ import vue from '../assets/vue.png';
 import gbt from '../assets/ChatGPT-Logo.png'
 import sol from '../assets/Solidity-Logo.png'
 import photography_img from '../assets/photogrphy_img.png';
+import background1 from '../assets/background1.png';
 
 import about01 from '../assets/about01_1.png'
 import about02 from '../assets/about03_3.png'
@@ -34,6 +35,10 @@ import about04 from '../assets/about04_4.png'
 import about05 from '../assets/about04_5.png'
 import about06 from '../assets/about04_6.png'
 import about07 from '../assets/about04_7.png'
+
+import pricing from '../assets/pricing2.png'
+import profile_aaron from '../assets/profile_aaron.jpg'
+import profile_youssef from '../assets/profile_youssef.png'
 
 import lottie_1 from '../assets/lottie_1.json'
 import coin from '../assets/coin.json'
@@ -48,9 +53,13 @@ export default {
     about05,
     about06,
     about07,
+    pricing,
+    profile_aaron,
+    profile_youssef,
     lottie_1,
     coin,
     megaphone,
+    background1,
 
     photography_img,
 

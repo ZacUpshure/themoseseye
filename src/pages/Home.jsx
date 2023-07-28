@@ -6,7 +6,9 @@ import {
     Header, 
     About,
     Features,
-    CTA
+    CTA,
+    ServicePricing,
+    Network
   } from './../container';
 
   import {Head} from './../components';
@@ -25,8 +27,10 @@ const Home = () => {
             <body>
                 <main>
                     <Header />
+                    <Network />
                     <Features />
                     <About />
+                    <ServicePricing />
                     <CTA />
                 </main>
             </body>

@@ -37,7 +37,7 @@ const About = () => {
               <div className="max-w-xl">
                 <p className="mt-6">
                   Even though we offer individual packages for specific fields and usecases, we still essentially try to provide a
-                  all around bundle services like developing a platform like a website and also designing an corporate identity
+                  all around bundle of services like developing a platform like a website and also designing an corporate identity
                   for that in order to successfully than run ad campaigns to make sure that conversions don't bounce.
                   {/* Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet
                   vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque
@@ -55,11 +55,7 @@ const About = () => {
                 </div>
               ))}
             </dl>
-            <div className="mt-10 flex">
-              <a href="#" className="text-base font-semibold leading-7 text-indigo-600">
-                Learn more about our company <span aria-hidden="true">&rarr;</span>
-              </a>
-            </div>
+
           </div>
         </div>
       </div>

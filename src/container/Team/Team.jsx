@@ -1,21 +1,21 @@
+import images from "../../constants/images"
+
 const people = [
     {
       name: 'Youssef Moussah',
       role: 'Co-Founder / CEO',
-      imageUrl:
-        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+      imageUrl: images.profile_youssef,
       bio: 'Professional Graphics designer, Photographer and Marketing advocate. I have 3 years of experience in the market and cooporated with many different fellow Designers of all skill levels therefor bringing a diverse set of experiences to the table',
-      twitterUrl: '#',
+
       linkedinUrl: '#',
     },
     {
       name: 'Aaron Engelmann',
       role: 'Co-Founder / CTO',
-      imageUrl:
-        'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+      imageUrl: images.profile_aaron,
       bio: 'Web Developer and Marketing enthusiast. I have 1 year of experience as a software engineer in the industry of multi channel marketing, working with senior engineers, product managers and even CEOs and CTOs',
-      twitterUrl: '#',
-      linkedinUrl: '#',
+
+      linkedinUrl: 'https://www.linkedin.com/in/aaron-engelmann-90a956187/',
     },
     // More people...
   ]
@@ -38,7 +38,7 @@ const people = [
             </p>
           </div>
           <ul role="list" className="-mt-12 space-y-12 divide-y divide-gray-200 xl:col-span-3">
-            {/* {people.map((person) => (
+            {people.map((person) => (
               <li key={person.name} className="flex flex-col gap-10 pt-12 sm:flex-row">
                 <img className="aspect-[4/5] w-52 flex-none rounded-2xl object-cover" src={person.imageUrl} alt="" />
                 <div className="max-w-xl flex-auto">
@@ -46,14 +46,14 @@ const people = [
                   <p className="text-base leading-7 text-gray-600">{person.role}</p>
                   <p className="mt-6 text-base leading-7 text-gray-600">{person.bio}</p>
                   <ul role="list" className="mt-6 flex gap-x-6">
-                    <li>
+                    {/* <li>
                       <a href={person.twitterUrl} className="text-gray-400 hover:text-gray-500">
                         <span className="sr-only">Twitter</span>
                         <svg className="h-5 w-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
                           <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84" />
                         </svg>
                       </a>
-                    </li>
+                    </li> */}
                     <li>
                       <a href={person.linkedinUrl} className="text-gray-400 hover:text-gray-500">
                         <span className="sr-only">LinkedIn</span>
@@ -69,7 +69,7 @@ const people = [
                   </ul>
                 </div>
               </li>
-            ))} */}
+            ))}
           </ul>
         </div>
       </div>

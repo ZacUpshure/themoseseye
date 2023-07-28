@@ -1,0 +1,13 @@
+.my-element {
+    /* Set the background image using the URL relative to the root of the website */
+    background-image: url('https://themoseseye-galery-images.s3.eu-central-1.amazonaws.com/Galery-images/background1.png');
+  
+    /* Other background properties, such as size, repeat, and position, can be set here */
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    /* Other styles for the element */
+    /* width: 100%;
+    height: 300px; */
+    /* Add more styles as needed */
+  }
