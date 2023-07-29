@@ -17,28 +17,23 @@ const navigation = {
       {
         name: 'Services',
         featured: [
-          { name: 'Product Photography', href: '/photography' },
-          { name: 'Business', href: '/products/item/photo-shooting-essential' },
-          { name: 'Marriages', href: '/products/item/photo-shooting-basic' },
-          { name: 'Family', href: '/products/item/photo-shooting-basic' },
+          { name: 'Photography', href: '/photography' },
+          { name: 'Videography', href: '/products/item/photo-shooting-essential' },
+        ],
+        Media: [
+          { name: 'Photography', href: '/products/item/photo-shooting-essential' },
+          { name: 'Videography', href: '/contact' },
         ],
         collection: [
           { name: 'Landing Page Wordpress', href: '/products/item/wordpress-website' },
           { name: 'Landing Page React', href: 'https://themoseseye-galery-react-tailwind.vercel.app/image/1' },
-          { name: 'Ecommerce / Web Application', href: '' },
-          { name: 'REST Api', href: '#' },
-          { name: 'Smart Contracts', href: '#' },
-        ],
-        categories: [
-          { name: 'Commercials', href: '/videography' },
-          { name: 'Social Media Content', href: '/products/item/commercial-basic' },
-          { name: '', href: '#' },
+          { name: 'Ecommerce / Web Application', href: '/products/item/ecommerce-web-application' },
         ],
         brands: [
-          { name: 'Social Media Account Management', href: '#' },
-          { name: 'Ad Campaign management', href: '#' },
-          { name: 'Corporate Identity Design', href: '#' },
-          { name: 'AI powered Copywriting', href: '#' },
+          { name: 'Social Media Account Management', href: 'contact' },
+          { name: 'Ad Campaign management', href: 'contact' },
+          { name: 'Corporate Identity Design', href: 'contact' },
+          { name: 'AI powered Copywriting', href: 'contact' },
         ],
       },
     ],
@@ -123,7 +118,7 @@ const Navbar = () => {
                             <div className="grid grid-cols-1 gap-x-6 gap-y-10">
                               <div>
                                 <p id={`mobile-featured-heading-${categoryIdx}`} className="font-medium text-gray-900">
-                                  Photography
+                                  Media
                                 </p>
                                 <ul
                                   role="list"
@@ -131,20 +126,6 @@ const Navbar = () => {
                                   className="mt-6 space-y-6"
                                 >
                                   {category.featured.map((item) => (
-                                    <li key={item.name} className="flex">
-                                      <a href={item.href} className="text-gray-500">
-                                        {item.name}
-                                      </a>
-                                    </li>
-                                  ))}
-                                </ul>
-                              </div>
-                              <div>
-                                <p id="mobile-categories-heading" className="font-medium text-gray-900">
-                                  Videography & Commercials
-                                </p>
-                                <ul role="list" aria-labelledby="mobile-categories-heading" className="mt-6 space-y-6">
-                                  {category.categories.map((item) => (
                                     <li key={item.name} className="flex">
                                       <a href={item.href} className="text-gray-500">
                                         {item.name}
@@ -161,6 +142,20 @@ const Navbar = () => {
                                 </p>
                                 <ul role="list" aria-labelledby="mobile-collection-heading" className="mt-6 space-y-6">
                                   {category.collection.map((item) => (
+                                    <li key={item.name} className="flex">
+                                      <a href={item.href} className="text-gray-500">
+                                        {item.name}
+                                      </a>
+                                    </li>
+                                  ))}
+                                </ul>
+                              </div>
+                              <div>
+                                <p id="mobile-collection-heading" className="font-medium text-gray-900">
+                                  Web Development
+                                </p>
+                                <ul role="list" aria-labelledby="mobile-collection-heading" className="mt-6 space-y-6">
+                                  {category.Media.map((item) => (
                                     <li key={item.name} className="flex">
                                       <a href={item.href} className="text-gray-500">
                                         {item.name}
@@ -260,7 +255,7 @@ const Navbar = () => {
                                         open
                                           ? 'border-indigo-600 text-indigo-600'
                                           : 'border-transparent text-gray-700 hover:text-gray-800',
-                                        'relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out'
+                                        'relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium focus-visible:outline-none transition-colors duration-200 ease-out'
                                       )}
                                     >
                                       {category.name}
@@ -282,14 +277,14 @@ const Navbar = () => {
   
                                       <div className="relative bg-white">
                                         <div className="mx-auto max-w-7xl px-8">
-                                          <div className="grid grid-cols-2 items-start gap-x-8 gap-y-10 pb-12 pt-10">
-                                            <div className="grid grid-cols-2 gap-x-8 gap-y-10">
+                                          <div className="grid grid-cols-1 items-start gap-x-8 gap-y-10 pb-12 pt-10">
+                                            {/* <div className="grid grid-cols-2 gap-x-8 gap-y-10">
                                               <div>
                                                 <p
                                                   id={`desktop-featured-heading-${categoryIdx}`}
                                                   className="font-medium text-gray-900"
                                                 >
-                                                  Photography
+                                                  Media
                                                 </p>
                                                 <ul
                                                   role="list"
@@ -305,26 +300,8 @@ const Navbar = () => {
                                                   ))}
                                                 </ul>
                                               </div>
-                                              <div>
-                                                <p id="desktop-categories-heading" className="font-medium text-gray-900">
-                                                  Commercials & Videography
-                                                </p>
-                                                <ul
-                                                  role="list"
-                                                  aria-labelledby="desktop-categories-heading"
-                                                  className="mt-6 space-y-6 sm:mt-4 sm:space-y-4"
-                                                >
-                                                  {category.categories.map((item) => (
-                                                    <li key={item.name} className="flex">
-                                                      <a href={item.href} className="hover:text-gray-800">
-                                                        {item.name}
-                                                      </a>
-                                                    </li>
-                                                  ))}
-                                                </ul>
-                                              </div>
-                                            </div>
-                                            <div className="grid grid-cols-2 gap-x-8 gap-y-10">
+                                            </div> */}
+                                            <div className="grid grid-cols-3 gap-x-8 gap-y-10">
                                               <div>
                                                 <p id="desktop-collection-heading" className="font-medium text-gray-900">
                                                   Web Development
@@ -335,6 +312,25 @@ const Navbar = () => {
                                                   className="mt-6 space-y-6 sm:mt-4 sm:space-y-4"
                                                 >
                                                   {category.collection.map((item) => (
+                                                    <li key={item.name} className="flex">
+                                                      <a href={item.href} className="hover:text-gray-800">
+                                                        {item.name}
+                                                      </a>
+                                                    </li>
+                                                  ))}
+                                                </ul>
+                                              </div>
+  
+                                              <div>
+                                                <p id="desktop-collection-heading" className="font-medium text-gray-900">
+                                                  Media
+                                                </p>
+                                                <ul
+                                                  role="list"
+                                                  aria-labelledby="desktop-collection-heading"
+                                                  className="mt-6 space-y-6 sm:mt-4 sm:space-y-4"
+                                                >
+                                                  {category.Media.map((item) => (
                                                     <li key={item.name} className="flex">
                                                       <a href={item.href} className="hover:text-gray-800">
                                                         {item.name}
