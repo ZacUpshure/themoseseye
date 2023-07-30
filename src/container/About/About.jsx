@@ -2,13 +2,15 @@ import React, {useState, useEffect} from 'react'
 import { motion } from 'framer-motion';
 import images from '../../constants/images';
 import Lottie from 'lottie-react';
+import { useTranslation } from 'react-i18next';
 
 const stats = [
-  { label: 'Spent optimal', value: 'Budget', lottie: images.coin },
-  { label: 'Reach maximum', value: 'Customers', lottie: images.megaphone },
+  { label: 'aboutSpentOptimal', value: 'aboutSpentOptimalBudget', lottie: images.coin },
+  { label: 'aboutReachMax', value: 'aboutReachMaxCustomers', lottie: images.megaphone },
 ]
 
 const About = () => {
+  const { t } = useTranslation();
   return (
     <>
       <div className="bg-white py-24 sm:py-32">
@@ -30,27 +32,21 @@ const About = () => {
           </div>
           <div>
             <div className="text-base leading-7 text-gray-700 lg:max-w-lg">
-              <p className="text-base font-semibold leading-7 text-indigo-600">Company goals</p>
+              <p className="text-base font-semibold leading-7 text-indigo-600">{t('aboutTag')}</p>
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                What we want for our Customers.
+                {t('aboutHeadline')}
               </h1>
               <div className="max-w-xl">
                 <p className="mt-6">
-                  Even though we offer individual packages for specific fields and usecases, we still essentially try to provide a
-                  all around bundle of services like developing a platform like a website and also designing an corporate identity
-                  for that in order to successfully than run ad campaigns to make sure that conversions don't bounce.
-                  {/* Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet
-                  vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque
-                  erat velit. Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris
-                  semper sed amet vitae sed turpis id. */}
+                  {t('aboutSubtext')}
                 </p>
               </div>
             </div>
             <dl className="mt-10 grid grid-cols-2 gap-8 border-t border-gray-900/10 pt-10 sm:grid-cols-2">
               {stats.map((stat, statIdx) => (
                 <div key={statIdx}>
-                  <dt className="text-sm font-semibold leading-6 text-gray-600">{stat.label}</dt>
-                  <dd className="mt-2 text-3xl font-bold leading-10 tracking-tight text-gray-900">{stat.value}</dd>
+                  <dt className="text-sm font-semibold leading-6 text-gray-600">{t(stat.label)}</dt>
+                  <dd className="mt-2 text-3xl font-bold leading-10 tracking-tight text-gray-900">{t(stat.value)}</dd>
                   <Lottie animationData={stat.lottie} className='w-24' />
                 </div>
               ))}

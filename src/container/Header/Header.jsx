@@ -30,22 +30,17 @@ const Header = () => {
             </h1>
             <div className="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
               <p className="text-lg leading-8 text-gray-600">
-                We are experts in website development using React or WordPress. 
-                From crafting impactful branding strategies to managing ad campaigns across various platforms
-
-                {/* Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-                fugiat veniam occaecat fugiat aliqua. Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-                lorem cupidatat commodo. */}
+                {t('heroSubtext')}
               </p>
               <div className="mt-10 flex items-center gap-x-6">
                 <a
                   href="/products"
                   className="rounded-md bg-indigo-600 z-999 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
-                  Book services!
+                  {t('heroButtonBookServices')}
                 </a>
                 <a href="/contact" className="text-sm font-semibold leading-6 text-gray-900">
-                  Learn more <span aria-hidden="true">→</span>
+                    {t('heroButtonLearnMore')} <span aria-hidden="true">→</span>
                 </a>
               </div>
             </div>

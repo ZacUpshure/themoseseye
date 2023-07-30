@@ -10,6 +10,7 @@ import { setIsCartOpen } from '../../state'
 import CartMenu from './CartMenu'
 import { useStateContext } from '../../context/StateContext'
 import LanguageSelector from '../../components/LanguageSelector/LanguageSelector'
+import { useTranslation } from 'react-i18next';
 
 
 
@@ -51,6 +52,7 @@ function classNames(...classes) {
 }
 
 const Navbar = () => {
+    const { t } = useTranslation();
     const {showCart, setShowCart} = useStateContext();
     const [open, setOpen] = useState(false);
 

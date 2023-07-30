@@ -2,5 +2,36 @@
     "heroHeadline": "Wir stärken die digitale Identität Ihres Unternehmens.",
     "heroSubtext": "Wir sind Experten für die Website-Entwicklung mit React oder WordPress. Von der Entwicklung wirkungsvoller Markenstrategien bis hin zur Verwaltung von Werbekampagnen auf verschiedenen Plattformen",
     "heroButtonBookServices": "Service Buchen!",
-    "heroButtonLearnMore": "Mehr Entdecken"
+    "heroButtonLearnMore": "Mehr Entdecken",
+    "networkHeadline": "Unser Netzwerk",
+
+    "featuresHeadline": "Alles, was Sie brauchen, um Ihr Geschäft zu verbessern",
+    "featuresSubtext": "Erfahren Sie, wie wir Ihnen helfen können, Leads zu generieren und den Umsatz zu steigern!",
+
+    "featuresPhotography": "Fotografie | Videografie",
+    "featuresPhotographySub": "Wir drehen professionelle Werbespots und Social-Media-Videos sowie Studiofotografie.",
+
+    "featuresCorporateDesign": "Corporate Design",
+    "featuresCorporateDesignSub": "Spezialisiert auf die Schaffung einer zusammenhängenden und wirkungsvollen visuellen Identität für Ihr Unternehmen.",
+
+    "featuresWebDevelopment": "Web Development",
+    "featuresWebDevelopmentSub": "Leistungsstarke, schöne Websites, die in den modernsten Frameworks wie nextjs geschrieben wurden.",
+
+    "featuresDigitalMarketing": "Digital Marketing",
+    "featuresDigitalMarketingSub": "Steigern Sie Ihren Umsatz und erreichen Sie mehr Kunden mit E-Mail-Marketing, Google Ads, Social-Media-Kampagnen und SEO.",
+
+    "aboutTag": "Firmen Ziele",
+    "aboutHeadline": "Was wir für unsere Kunden wollen.",
+    "aboutSubtext": "Auch wenn wir individuelle Pakete für bestimmte Bereiche und Anwendungsfälle anbieten, versuchen wir im Wesentlichen immer noch, ein Rundum-Paket an Dienstleistungen anzubieten, wie z. B. die Entwicklung einer Plattform wie einer Website und auch die Gestaltung einer Corporate Identity dafür, um dann erfolgreich Werbekampagnen durchführen zu können dass Conversions nicht abprallen.",
+
+    "aboutSpentOptimal": "Optimales Budget",
+    "aboutSpentOptimalBudget": "ausgeben",
+    "aboutReachMax": "Maximale Kunden",
+    "aboutReachMaxCustomers": "erreichen",
+
+    "pricingHeadline": "Unsere Preisgestaltung",
+    "pricingSubtext": "Auf unserer Buchungsplattform haben wir unsere Preise an einem Ort.",
+
+    "ctaHeadline": "Haben Sie die Bedeutung von Marketing verstanden?",
+    "ctaHeadlineTwo": "Starten Sie Ihre kostenlose Erstberatung."
 }

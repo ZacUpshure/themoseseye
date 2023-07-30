@@ -1,5 +1,6 @@
 import { Fragment } from 'react'
 import { CheckIcon, MinusIcon } from '@heroicons/react/20/solid'
+import { useTranslation } from 'react-i18next';
 
 const tiers = [
   {
@@ -60,6 +61,7 @@ function classNames(...classes) {
 }
 
 export default function Example() {
+  const { t } = useTranslation();
   return (
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">

@@ -2,6 +2,39 @@
     "heroHeadline": "We Elevate Your Business's Digital Identity.",
     "heroSubtext": "We are experts in website development using React or WordPress. From crafting impactful branding strategies to managing ad campaigns across various platforms",
     "heroButtonBookServices": "Book Services!",
-    "heroButtonLearnMore": "Learn More"
+    "heroButtonLearnMore": "Learn More",
+
+    "networkHeadline": "Our Network",
+
+    "featuresHeadline": "Everything you need to improve your business",
+    "featuresSubtext": "See how we can help generate leads and increase sales!",
+
+    "featuresPhotography": "Photography | Videography",
+    "featuresPhotographySub": "We shoot professional commercials and Social media Videos as well as Studio photography.",
+
+    "featuresCorporateDesign": "Corporate Design",
+    "featuresCorporateDesignSub": "Specialized in creating a cohesive and impactful visual identity for your business.",
+
+    "featuresWebDevelopment": "Web Development",
+    "featuresWebDevelopmentSub": "High perfomance beautiful websites written in the most modern Frameworks like nextjs.",
+
+    "featuresDigitalMarketing": "Digital Marketing",
+    "featuresDigitalMarketingSub": "Increase sales and reach more customers with Email Marketing, Google Ads, Social Media Campaigns and SEO.",
+
+    "aboutTag": "Company goals",
+    "aboutHeadline": "What we want for our Customers.",
+    "aboutSubtext": "Even though we offer individual packages for specific fields and usecases, we still essentially try to provide a all around bundle of services like developing a platform like a website and also designing an corporate identity for that in order to successfully than run ad campaigns to make sure that conversions don't bounce.",
+
+    "aboutSpentOptimal": "Spent optimal",
+    "aboutSpentOptimalBudget": "Budget",
+    "aboutReachMax": "Reach Maximum",
+    "aboutReachMaxCustomers": "Customers",
+    
+    "pricingHeadline": "See our Pricing",
+    "pricingSubtext": "We have our prices on our booking platform all in one place.",
+    
+    "ctaHeadline": "Understood the importance of marketing ?",
+    "ctaHeadlineTwo": "Start your free first consulting."
+
 }
   
