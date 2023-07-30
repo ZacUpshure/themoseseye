@@ -9,6 +9,7 @@ import { useNavigate } from 'react-router-dom'
 import { setIsCartOpen } from '../../state'
 import CartMenu from './CartMenu'
 import { useStateContext } from '../../context/StateContext'
+import LanguageSelector from '../../components/LanguageSelector/LanguageSelector'
 
 
 
@@ -414,6 +415,9 @@ const Navbar = () => {
                           </div> */}
                         </div>
   
+                          <div className='pl-28'>
+                            <LanguageSelector />
+                          </div>
                         <span className="mx-4 h-6 w-px bg-gray-200 lg:mx-6" aria-hidden="true" />
   
                         <div className="flow-root">

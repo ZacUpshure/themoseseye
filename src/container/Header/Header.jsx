@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import images from '../../constants/images';
+import { useTranslation } from 'react-i18next';
 
 const scaleVariants = {
   whileInView: {
@@ -14,6 +15,8 @@ const scaleVariants = {
 }
  
 const Header = () => {
+    const { t } = useTranslation();
+
   return (
     <div className="relative isolate overflow-hidden bg-gradient-to-b from-indigo-100/20">
         <div
@@ -23,7 +26,7 @@ const Header = () => {
         <div className="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
             <h1 className="max-w-2xl text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:col-span-2 xl:col-auto">
-              We Elevate Your Business's Digital Identity.
+                {t('heroHeadline')}
             </h1>
             <div className="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
               <p className="text-lg leading-8 text-gray-600">

@@ -31,6 +31,33 @@ import CartMenu from './scenes/global/CartMenu';
 
 import { Helmet } from 'react-helmet';
 
+import { initReactI18next } from 'react-i18next';
+import i18n from 'i18next';
+import { useTranslation, Trans } from 'react-i18next';
+import LanguageSelector from './components/LanguageSelector/LanguageSelector';
+
+import enTranslation from './translations/en.json';
+import deTranslation from './translations/de.json';
+
+// Initialize i18next
+i18n
+  .use(initReactI18next)
+  .init({
+    resources: {
+      en: {
+        translation: enTranslation,
+      },
+      de: {
+        translation: deTranslation,
+      },
+    },
+    lng: 'en', // Default language
+    fallbackLng: 'en', // Fallback language if translation is missing
+    interpolation: {
+      escapeValue: false,
+    },
+  });
+
 const TRACKING_ID = "AW-11242519332";
 ReactGA.initialize(TRACKING_ID);
 
