@@ -18,7 +18,7 @@ const About = () => {
             {/* <div className="relative overflow-hidden rounded-3xl bg-gray-900 px-6 pb-9 pt-64 shadow-2xl sm:px-12 lg:max-w-lg lg:px-8 lg:pb-8 xl:px-10 xl:pb-10"> */}
 
               <Lottie animationData={images.lottie_1} />
-              <div className="absolute inset-0  mix-blend-multiply" />
+              {/* <div className="absolute inset-0  mix-blend-multiply" /> */}
               {/* <div
                 className="absolute left-1/2 top-1/2 -ml-16 -translate-x-1/2 -translate-y-1/2 transform-gpu blur-3xl"
                 aria-hidden="true"

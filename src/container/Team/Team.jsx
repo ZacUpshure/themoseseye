@@ -33,9 +33,9 @@ const people = [
             <p className="mt-6 text-lg leading-8 text-gray-600">
               Email: info@themoseseye.com
             </p>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+            <a href="tel: +491725450304" className="mt-6 text-lg leading-8 text-gray-600">
               Tel: 01725450304
-            </p>
+            </a>
           </div>
           <ul role="list" className="-mt-12 space-y-12 divide-y divide-gray-200 xl:col-span-3">
             {people.map((person) => (

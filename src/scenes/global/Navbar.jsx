@@ -117,9 +117,9 @@ const Navbar = () => {
                           <div className="grid grid-cols-1 items-start gap-x-6 gap-y-10">
                             <div className="grid grid-cols-1 gap-x-6 gap-y-10">
                               <div>
-                                <p id={`mobile-featured-heading-${categoryIdx}`} className="font-medium text-gray-900">
+                                <a href='/products' id={`mobile-featured-heading-${categoryIdx}`} className="font-medium text-gray-900">
                                   Media
-                                </p>
+                                </a>
                                 <ul
                                   role="list"
                                   aria-labelledby={`mobile-featured-heading-${categoryIdx}`}
@@ -137,9 +137,9 @@ const Navbar = () => {
                             </div>
                             <div className="grid grid-cols-1 gap-x-6 gap-y-10">
                               <div>
-                                <p id="mobile-collection-heading" className="font-medium text-gray-900">
+                                <a href='/products' id="mobile-collection-heading" className="font-medium text-gray-900">
                                   Web Development
-                                </p>
+                                </a>
                                 <ul role="list" aria-labelledby="mobile-collection-heading" className="mt-6 space-y-6">
                                   {category.collection.map((item) => (
                                     <li key={item.name} className="flex">
@@ -151,24 +151,9 @@ const Navbar = () => {
                                 </ul>
                               </div>
                               <div>
-                                <p id="mobile-collection-heading" className="font-medium text-gray-900">
-                                  Web Development
-                                </p>
-                                <ul role="list" aria-labelledby="mobile-collection-heading" className="mt-6 space-y-6">
-                                  {category.Media.map((item) => (
-                                    <li key={item.name} className="flex">
-                                      <a href={item.href} className="text-gray-500">
-                                        {item.name}
-                                      </a>
-                                    </li>
-                                  ))}
-                                </ul>
-                              </div>
-  
-                              <div>
-                                <p id="mobile-brand-heading" className="font-medium text-gray-900">
+                                <a href='/products' id="mobile-brand-heading" className="font-medium text-gray-900">
                                   Branding & Marketing
-                                </p>
+                                </a>
                                 <ul role="list" aria-labelledby="mobile-brand-heading" className="mt-6 space-y-6">
                                   {category.brands.map((item) => (
                                     <li key={item.name} className="flex">
@@ -303,9 +288,9 @@ const Navbar = () => {
                                             </div> */}
                                             <div className="grid grid-cols-3 gap-x-8 gap-y-10">
                                               <div>
-                                                <p id="desktop-collection-heading" className="font-medium text-gray-900">
+                                                <a href='/products' id="desktop-collection-heading" className="font-medium text-gray-900">
                                                   Web Development
-                                                </p>
+                                                </a>
                                                 <ul
                                                   role="list"
                                                   aria-labelledby="desktop-collection-heading"
@@ -322,9 +307,9 @@ const Navbar = () => {
                                               </div>
   
                                               <div>
-                                                <p id="desktop-collection-heading" className="font-medium text-gray-900">
+                                                <a href='/products' id="desktop-collection-heading" className="font-medium text-gray-900">
                                                   Media
-                                                </p>
+                                                </a>
                                                 <ul
                                                   role="list"
                                                   aria-labelledby="desktop-collection-heading"
@@ -341,9 +326,9 @@ const Navbar = () => {
                                               </div>
   
                                               <div>
-                                                <p id="desktop-brand-heading" className="font-medium text-gray-900">
+                                                <a href='/products' id="desktop-brand-heading" className="font-medium text-gray-900">
                                                   Branding & Marketing
-                                                </p>
+                                                </a>
                                                 <ul
                                                   role="list"
                                                   aria-labelledby="desktop-brand-heading"
