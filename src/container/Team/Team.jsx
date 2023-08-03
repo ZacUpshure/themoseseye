@@ -17,6 +17,14 @@ const people = [
 
       linkedinUrl: 'https://www.linkedin.com/in/aaron-engelmann-90a956187/',
     },
+    {
+      name: 'Anastasia Geranyushkina',
+      role: 'Sales Managerin / Marketing Strategist',
+      imageUrl: images.profile_anastasia,
+      bio: 'Marketing expert and strategist. I have a great network with influencers internationally. Furthermore I have a lot of experience in sales and aquisition',
+
+      linkedinUrl: 'https://www.linkedin.com/in/aaron-engelmann-90a956187/',
+    },
     // More people...
   ]
   
