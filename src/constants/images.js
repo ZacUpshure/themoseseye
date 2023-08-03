@@ -94,7 +94,6 @@
 // import logo from '../img/EDEV.svg';
 import logo from '../assets/logo.png';
 import Cover from '../assets/testCoverHeader.png'
-import Cover2 from '../assets/CoverImageNew.png'
 import circle from '../assets/circle.svg';
 //import adidas from '../assets/adidas.png';
 
