@@ -23,7 +23,7 @@ const HeroBanner = () => {
 <div className='drop-shadow-sm p-7 rounded-lg bg-gray-50 container grid md:grid-cols-2 gap-4 overflow-hidden'>
   <div className=''>
     <p className='text-black'>Websites, Photography, Ad Campaign management</p>
-    <h3 className='text-4xl sm:text-6xl text-black font-bold'>Make Your Business Shine!</h3>
+    <h3 className='text-4xl sm:text-6xl text-black font-bold'>Make <br/> Your Business Shine!</h3>
   </div>
   <div className='grid grid-cols-3 gap-4 relative rotate-12 scale-110 mobile-friendly-grid'>
     {/* <img src={imageUrl} alt="" width={500} /> */}
