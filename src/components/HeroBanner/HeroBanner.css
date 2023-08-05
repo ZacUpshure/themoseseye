@@ -1,0 +1,11 @@
+/* Add this media query to adjust the mobile-friendly grid size */
+@media (max-width: 640px) {
+    .mobile-friendly-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      padding: 1rem;
+      transform: scale(1); /* Adjust the scale value as needed */
+    }
+  }
+  

@@ -362,9 +362,9 @@ const ItemDetails = () => {
         </div>
             <div className='mx-auto pt-7'>
                 <div className='container '>
-                    <h2 className='text-black text-4xl font-bold pb-4'> You may also like</h2>
+                    <h2 className='text-black text-xl font-bold pb-7'> You may also like</h2>
                 </div>
-                <div className='container grid grid-cols-4 gap-4 '>
+                <div className='container grid grid-cols-3 gap-2 '>
                     {productsData?.slice(0, 3).map((item) => <Product key={item._id} product={item} />)}
                 </div>
 
