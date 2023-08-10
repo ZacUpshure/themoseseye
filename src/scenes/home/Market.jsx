@@ -44,8 +44,8 @@ const Market = () => {
             <h2 className='text-2xl font-bold text-black'>See our Services & Bundles</h2>
           </div>
 
-          <div className='container mx-auto pt-7 pb-7 pl-3'>
-            <div className='grid grid-cols-3 md:gap-7'>
+          <div className='container mx-auto pt-7 pb-7 pl-7'>
+            <div className='grid md:grid-cols-3 grid-cols-1 md:gap-7'>
               {products?.map((product) => <Product key={product._id} product={product} />)}
             </div>
           </div>
