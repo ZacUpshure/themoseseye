@@ -120,6 +120,7 @@ import gbt from '../assets/ChatGPT-Logo.png'
 import sol from '../assets/Solidity-Logo.png'
 import photography_img from '../assets/photogrphy_img.png';
 import background1 from '../assets/background1.png';
+import mediaImage from '../assets/mediaImage.png'
 
 import about01 from '../assets/about01_1.png'
 import about02 from '../assets/about03_3.png'
@@ -156,6 +157,7 @@ export default {
     coin,
     megaphone,
     background1,
+    mediaImage,
 
     photography_img,
 

@@ -4,7 +4,7 @@ export default function CTA() {
   const { t } = useTranslation();
     return (
       <div className="bg-white">
-        <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:justify-between lg:px-8">
+        <div className="mx-auto max-w-7xl px-6 lg:flex lg:items-center lg:justify-between lg:px-8">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             {t('ctaHeadline')}
             <br />
