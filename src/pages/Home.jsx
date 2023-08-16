@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { Helmet } from 'react-helmet';
 import ReactGA from 'react-ga';
 import MediaSection from '../container/MediaSection/MediaSection';
+import Development from '../container/DevelopmentSection/Development';
 
 import {
     Header, 
@@ -32,6 +33,7 @@ const Home = () => {
                     <Features />
                     <About />
                     <MediaSection />
+                    <Development />
                     <ServicePricing />
                     <CTA />
                 </main>
