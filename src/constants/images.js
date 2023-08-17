@@ -122,6 +122,7 @@ import photography_img from '../assets/photogrphy_img.png';
 import background1 from '../assets/background1.png';
 import mediaImage from '../assets/mediaImage.png';
 import developmentImage from '../assets/DevelopmentImage.png';
+import eyeshot from '../assets/eye_shot.png'
 
 import about01 from '../assets/about01_1.png'
 import about02 from '../assets/about03_3.png'
@@ -160,6 +161,7 @@ export default {
     background1,
     mediaImage,
     developmentImage,
+    eyeshot,
 
     photography_img,
 

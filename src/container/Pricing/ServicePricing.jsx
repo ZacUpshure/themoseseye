@@ -1,6 +1,7 @@
 import React from 'react';
 import images from '../../constants/images';
 import { useTranslation } from 'react-i18next';
+import Testimonials from '../testimonials/Testimonials';
 
 const ServicePricing = () => {
   const { t } = useTranslation();
@@ -12,7 +13,7 @@ const ServicePricing = () => {
         {t('pricingSubtext')}
       </p>
     </div>
-      <img src={images.pricing} alt="pricing image" className='sm:scale-110 scale-125 pt-7' />
+      <Testimonials />
   </div>
   )
 }
